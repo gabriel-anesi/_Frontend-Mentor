@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #f3eae3;
+    height: 75vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+.container-left img{
+    height: 40vh;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container-right {
+    background-color: #FFF;
+    height: 40vh;
+    width: 20vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+p {
+    color: #6a696e;
+    font-size: 12px;
+}
+
+button {
+    background-color: #3d8168;
+    color: #FFF;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button img {
+    color: #FFF;
+}
+
+.prices {
+    display: flex;
+    padding: 1rem;
+}
+
+#total-price {
+    color: #3d8168;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 35px;
+}
+
+#price {
+    color: #6a696e;
+    text-decoration: line-through;
+    padding: 5px 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+
+    .container img {
+        border-radius: 10px;
+    }
+
+    .container-left img {
+        width: 90vw;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .container-right {
+        width: 90vw;
+        border-radius: 10px;
+        max-width: 300px;
+    }
+
+    .attribution {
+        margin-top: 20px;
+    }
+}
